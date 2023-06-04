@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- Product Image -->
+
+    <!-- Back Button -->
+
+    <!-- Product Title and Price -->
+
+    <!-- Favorite Button -->
+
+    <ImageView
+        android:id="@+id/detailImage"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="4dp"
+        android:scaleType="centerCrop"
+        app:layout_constraintDimensionRatio="16:9"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@mipmap/sp1" />
+
+    <ImageButton
+        android:id="@+id/detailBack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/back_bg"
+        android:padding="12dp"
+        app:layout_constraintEnd_toEndOf="@id/detailImage"
+        app:layout_constraintTop_toTopOf="@id/detailImage"
+        app:srcCompat="@drawable/ic_baseline_navigate_before_24dp" />
+
+    <!-- Separator Line -->
+
+    <TextView
+        android:id="@+id/detailName"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="24dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="217dp"
+        android:layout_marginBottom="1dp"
+        android:text="商品名称"
+        android:textColor="@color/colorText"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="@+id/detailImage"
+        app:layout_constraintEnd_toEndOf="@id/detailImage"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/detailImage"
+        app:layout_constraintStart_toStartOf="@+id/detailImage"
+        app:layout_constraintTop_toBottomOf="@+id/detailImage"
+        app:layout_constraintVertical_bias="0.814" />
+
+    <TextView
+        android:id="@+id/detailPrice"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="24dp"
+        android:text="¥ 99.99"
+        android:textColor="@color/colorAccent"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="@id/detailImage"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@id/detailImage"
+        app:layout_constraintTop_toBottomOf="@id/detailName"
+        app:layout_constraintVertical_bias="0.0" />
+
+
+    <View
+        android:id="@+id/detailSeparator"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/colorDivider"
+        app:layout_constraintTop_toBottomOf="@id/detailPrice" />
+
+    <!-- Product Details -->
+    <TextView
+        android:id="@+id/detailContent"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_margin="24dp"
+        android:text="商品详情"
+        android:textColor="@color/colorTextSecondary"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@id/detailAddCartBtn"
+        app:layout_constraintEnd_toEndOf="@id/detailImage"
+        app:layout_constraintStart_toStartOf="@id/detailImage"
+        app:layout_constraintTop_toBottomOf="@id/detailSeparator" />
+
+    <!-- Add to Cart Button -->
+    <Button
+        android:id="@+id/detailAddCartBtn"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="24dp"
+        android:backgroundTint="@color/colorAccent"
+        android:elevation="0dp"
+        android:text="添加到购物车"
+        android:textColor="@android:color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@id/detailContent"
+        app:layout_constraintStart_toStartOf="@id/detailContent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

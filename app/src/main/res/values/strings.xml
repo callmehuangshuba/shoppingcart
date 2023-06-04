@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">理塘王子的魅力</string>
+    <string name="title_home">首页</string>
+    <string name="title_snack">商店</string>
+    <string name="title_place">购物车</string>
+    <string name="title_my">我的</string>
+    <string name="snack_add_btn">+</string>
+    <string name="place_money_label">合计: </string>
+    <string name="place_order_btn">下单</string>
+    <string name="place_less_label">-</string>
+    <string name="place_add_label">+</string>
+    <string name="place_order_count_init">1</string>
+    <string name="footer_label">---已到最底端---</string>
+    <string name="login_username_edit">请输入账号</string>
+    <string name="login_password_edit">请输入密码</string>
+    <string name="login_btn">登录</string>
+    <string name="register_btn">注册</string>
+    <string name="cart_empty_label">空</string>
+    <string name="order_empty_label">还没有下单哦</string>
+    <string name="remarks_edit">四川省甘孜藏族自治州理塘县然日卡</string>
+</resources>
