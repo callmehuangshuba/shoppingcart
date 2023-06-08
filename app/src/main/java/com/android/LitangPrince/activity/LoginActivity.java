@@ -111,31 +111,7 @@ public class LoginActivity extends AppCompatActivity {
      */
     @OnClick(R.id.registerBtn)
     void register() {
-        String username = usernameEdit.getText().toString();
-        String password = passwordEdit.getText().toString();
-        User user = new User(username, password);
-
-        User loginUser = checkUserFromAccountList(user);
-        if (loginUser != null) {
-            // 登录成功
-            Tips.show("登录成功");
-
-            MyApplication.isLogin(true);
-            MyApplication.setUser(loginUser);
-
-            // 持久化已登录用户数据
-            UserDao.saveUser(loginUser);
-            UserDao.isLogin(true);
-
-            // 持久化账号，以便退出登录后不用再输入账号
-            UserDao.saveUsername(username);
-
-            // 关闭Activity
-            finish();
-        } else {
-            // 登录失败
-            Tips.show("登录失败");
-            passwordEdit.setText("");
-        }
+        Intent intent = new Intent(this, RegisterActivity.class);
+        startActivity(intent);
     }
 }
